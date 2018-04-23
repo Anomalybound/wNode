@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23587d2566d44c59956dc1f255a13fa, type: 3}
+  m_Name: References
+  m_EditorClassIdentifier: 
+  DebugMode: 0
+  MinZoom: 0.1
+  MaxZoom: 4
+  ZoomDelta: 0.1
+  PortSize: {x: 16, y: 16}
+  PortOffset: 0
+  StartTanOff: 0.5
+  EndTanOff: 0.5
+  ConnectionLabelOffset: {x: 0, y: 0}
+  BackgroundColor: {r: 0.14509805, g: 0.14509805, b: 0.14509805, a: 1}
+  MainlineColor: {r: 0.35468584, g: 0.3584906, b: 0.3534176, a: 1}
+  SidelineColor: {r: 0.254717, g: 0.2535155, b: 0.2535155, a: 1}
+  LineDistanceInPixel: 80
+  PaddingFactor: 4
+  InsepctorColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+  FieldTypeColor:
+    _keys:
+    - Single
+    - String
+    - Texture
+    _values:
+    - {r: 0.49629393, g: 0.4575472, b: 1, a: 1}
+    - {r: 0.40282553, g: 0.16851342, b: 0.058156848, a: 1}
+    - {r: 0.6509434, g: 0.28555533, b: 0.62054294, a: 1}

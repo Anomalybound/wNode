@@ -1,0 +1,699 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21be0e8d845e428b913a5c996468ade9, type: 3}
+  m_Name: New Math Graph
+  m_EditorClassIdentifier: 
+  Nodes:
+    _keys:
+    - 76163bbe-1235-42da-81ad-c05e3acbaa60
+    - aa522ef9-3432-4f7b-9715-34e2056a9729
+    - 50f5a223-cf76-445a-9cae-0c5ff4df52c4
+    - c76c6047-9c84-4319-a3e4-0fc2c72df1fc
+    - 9f88b5ee-8b35-4c3a-addf-eef3a824151a
+    - bf199a39-a58a-4be6-b355-d049a677b267
+    - c6c4f1d2-bf96-45f1-9599-3d64d5556f61
+    _values:
+    - _id: 76163bbe-1235-42da-81ad-c05e3acbaa60
+      _nodeName: FloatInputNode
+      _headerRect:
+        serializedVersion: 2
+        x: -286
+        y: -163.5
+        width: 160
+        height: 20
+      _bodyRect:
+        serializedVersion: 2
+        x: -286
+        y: -143.5
+        width: 160
+        height: 1000
+      _node: {fileID: 114371332261590894}
+      PortDatas:
+      - _portId: f48f8aa4-dcc7-4d96-8f5e-3d02f5198c2d
+        _nodeDataId: 76163bbe-1235-42da-81ad-c05e3acbaa60
+        _fieldName: Output
+        _typeName: Single
+        _direction: 1
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: -130
+          y: -139.5
+          width: 16
+          height: 16
+        Connections:
+        - 7e2e2bb3-6abc-46b2-81bd-9b3c83c8966b
+    - _id: aa522ef9-3432-4f7b-9715-34e2056a9729
+      _nodeName: FloatInputNode
+      _headerRect:
+        serializedVersion: 2
+        x: -290
+        y: -11.5
+        width: 160
+        height: 20
+      _bodyRect:
+        serializedVersion: 2
+        x: -290
+        y: 8.5
+        width: 160
+        height: 1000
+      _node: {fileID: 114028891077771340}
+      PortDatas:
+      - _portId: f7159537-9a81-4edd-8c00-22c5bed3469b
+        _nodeDataId: aa522ef9-3432-4f7b-9715-34e2056a9729
+        _fieldName: Output
+        _typeName: Single
+        _direction: 1
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: -134
+          y: 12.5
+          width: 16
+          height: 16
+        Connections:
+        - 9ae26e7b-d8bb-4cd9-8b3c-e464be89858d
+    - _id: 50f5a223-cf76-445a-9cae-0c5ff4df52c4
+      _nodeName: AddNode
+      _headerRect:
+        serializedVersion: 2
+        x: -27
+        y: -118.5
+        width: 160
+        height: 20
+      _bodyRect:
+        serializedVersion: 2
+        x: -27
+        y: -98.5
+        width: 160
+        height: 1000
+      _node: {fileID: 114109962100346790}
+      PortDatas:
+      - _portId: 0b50f0d6-6097-443c-9008-72446cd8720f
+        _nodeDataId: 50f5a223-cf76-445a-9cae-0c5ff4df52c4
+        _fieldName: Data
+        _typeName: Single
+        _direction: 0
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: -39
+          y: -76.5
+          width: 16
+          height: 16
+        Connections:
+        - 7e2e2bb3-6abc-46b2-81bd-9b3c83c8966b
+      - _portId: 6db65801-a9b7-4f41-89c8-b5a876a89399
+        _nodeDataId: 50f5a223-cf76-445a-9cae-0c5ff4df52c4
+        _fieldName: Data
+        _typeName: Single
+        _direction: 1
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: 129
+          y: -76.5
+          width: 16
+          height: 16
+        Connections:
+        - b04a37a0-e1ee-405b-8c79-442b2ba6fb4e
+    - _id: c76c6047-9c84-4319-a3e4-0fc2c72df1fc
+      _nodeName: MultiplyNode
+      _headerRect:
+        serializedVersion: 2
+        x: -28
+        y: -32.5
+        width: 160
+        height: 20
+      _bodyRect:
+        serializedVersion: 2
+        x: -28
+        y: -12.5
+        width: 160
+        height: 1000
+      _node: {fileID: 114353728374527272}
+      PortDatas:
+      - _portId: 8fa1f5dc-1d23-46bc-93ed-4a05f34d3865
+        _nodeDataId: c76c6047-9c84-4319-a3e4-0fc2c72df1fc
+        _fieldName: Data
+        _typeName: Single
+        _direction: 0
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: -40
+          y: 9.5
+          width: 16
+          height: 16
+        Connections:
+        - 9ae26e7b-d8bb-4cd9-8b3c-e464be89858d
+      - _portId: 50d106fc-2f31-4a07-a875-bb5876436f5e
+        _nodeDataId: c76c6047-9c84-4319-a3e4-0fc2c72df1fc
+        _fieldName: Data
+        _typeName: Single
+        _direction: 1
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: 128
+          y: 9.5
+          width: 16
+          height: 16
+        Connections:
+        - 7f39eaf2-cfb0-4118-89c3-2797c56fd6c6
+    - _id: 9f88b5ee-8b35-4c3a-addf-eef3a824151a
+      _nodeName: SumNode
+      _headerRect:
+        serializedVersion: 2
+        x: 299
+        y: -16.5
+        width: 160
+        height: 20
+      _bodyRect:
+        serializedVersion: 2
+        x: 299
+        y: 3.5
+        width: 160
+        height: 1000
+      _node: {fileID: 114708454154224334}
+      PortDatas:
+      - _portId: e1e5773f-3d0c-4705-8553-b366327dbcd5
+        _nodeDataId: 9f88b5ee-8b35-4c3a-addf-eef3a824151a
+        _fieldName: Result
+        _typeName: Single
+        _direction: 0
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: 287
+          y: 7.5
+          width: 16
+          height: 16
+        Connections:
+        - b04a37a0-e1ee-405b-8c79-442b2ba6fb4e
+        - 7f39eaf2-cfb0-4118-89c3-2797c56fd6c6
+        - a2ea7bdf-e391-47b9-b173-34c0562922fa
+    - _id: bf199a39-a58a-4be6-b355-d049a677b267
+      _nodeName: FloatInputNode
+      _headerRect:
+        serializedVersion: 2
+        x: -37
+        y: 74.5
+        width: 160
+        height: 20
+      _bodyRect:
+        serializedVersion: 2
+        x: -37
+        y: 94.5
+        width: 160
+        height: 1000
+      _node: {fileID: 114834076542934744}
+      PortDatas:
+      - _portId: 06c76759-ea91-431b-ac63-da8552d61ff8
+        _nodeDataId: bf199a39-a58a-4be6-b355-d049a677b267
+        _fieldName: Output
+        _typeName: Single
+        _direction: 1
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: 119
+          y: 98.5
+          width: 16
+          height: 16
+        Connections:
+        - a2ea7bdf-e391-47b9-b173-34c0562922fa
+    - _id: c6c4f1d2-bf96-45f1-9599-3d64d5556f61
+      _nodeName: FloatInputNode
+      _headerRect:
+        serializedVersion: 2
+        x: -34.5
+        y: 155.5
+        width: 160
+        height: 20
+      _bodyRect:
+        serializedVersion: 2
+        x: -34.5
+        y: 175.5
+        width: 160
+        height: 1000
+      _node: {fileID: 114889022341653870}
+      PortDatas:
+      - _portId: 0c82cdf2-4ea7-4fb8-b7a3-b2ef572218cc
+        _nodeDataId: c6c4f1d2-bf96-45f1-9599-3d64d5556f61
+        _fieldName: Output
+        _typeName: Single
+        _direction: 1
+        _overrideConnectionTypeName: 
+        _nodeGraph: {fileID: 11400000}
+        Rect:
+          serializedVersion: 2
+          x: 121.5
+          y: 179.5
+          width: 16
+          height: 16
+        Connections: []
+  Ports:
+    _keys:
+    - f48f8aa4-dcc7-4d96-8f5e-3d02f5198c2d
+    - f7159537-9a81-4edd-8c00-22c5bed3469b
+    - 0b50f0d6-6097-443c-9008-72446cd8720f
+    - 6db65801-a9b7-4f41-89c8-b5a876a89399
+    - 8fa1f5dc-1d23-46bc-93ed-4a05f34d3865
+    - 50d106fc-2f31-4a07-a875-bb5876436f5e
+    - e1e5773f-3d0c-4705-8553-b366327dbcd5
+    - 06c76759-ea91-431b-ac63-da8552d61ff8
+    - 0c82cdf2-4ea7-4fb8-b7a3-b2ef572218cc
+    _values:
+    - _portId: f48f8aa4-dcc7-4d96-8f5e-3d02f5198c2d
+      _nodeDataId: 76163bbe-1235-42da-81ad-c05e3acbaa60
+      _fieldName: Output
+      _typeName: Single
+      _direction: 1
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: -130
+        y: -139.5
+        width: 16
+        height: 16
+      Connections:
+      - 7e2e2bb3-6abc-46b2-81bd-9b3c83c8966b
+    - _portId: f7159537-9a81-4edd-8c00-22c5bed3469b
+      _nodeDataId: aa522ef9-3432-4f7b-9715-34e2056a9729
+      _fieldName: Output
+      _typeName: Single
+      _direction: 1
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: -134
+        y: 12.5
+        width: 16
+        height: 16
+      Connections:
+      - 9ae26e7b-d8bb-4cd9-8b3c-e464be89858d
+    - _portId: 0b50f0d6-6097-443c-9008-72446cd8720f
+      _nodeDataId: 50f5a223-cf76-445a-9cae-0c5ff4df52c4
+      _fieldName: Data
+      _typeName: Single
+      _direction: 0
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: -39
+        y: -76.5
+        width: 16
+        height: 16
+      Connections:
+      - 7e2e2bb3-6abc-46b2-81bd-9b3c83c8966b
+    - _portId: 6db65801-a9b7-4f41-89c8-b5a876a89399
+      _nodeDataId: 50f5a223-cf76-445a-9cae-0c5ff4df52c4
+      _fieldName: Data
+      _typeName: Single
+      _direction: 1
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: 129
+        y: -76.5
+        width: 16
+        height: 16
+      Connections:
+      - b04a37a0-e1ee-405b-8c79-442b2ba6fb4e
+    - _portId: 8fa1f5dc-1d23-46bc-93ed-4a05f34d3865
+      _nodeDataId: c76c6047-9c84-4319-a3e4-0fc2c72df1fc
+      _fieldName: Data
+      _typeName: Single
+      _direction: 0
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: -40
+        y: 9.5
+        width: 16
+        height: 16
+      Connections:
+      - 9ae26e7b-d8bb-4cd9-8b3c-e464be89858d
+    - _portId: 50d106fc-2f31-4a07-a875-bb5876436f5e
+      _nodeDataId: c76c6047-9c84-4319-a3e4-0fc2c72df1fc
+      _fieldName: Data
+      _typeName: Single
+      _direction: 1
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: 128
+        y: 9.5
+        width: 16
+        height: 16
+      Connections:
+      - 7f39eaf2-cfb0-4118-89c3-2797c56fd6c6
+    - _portId: e1e5773f-3d0c-4705-8553-b366327dbcd5
+      _nodeDataId: 9f88b5ee-8b35-4c3a-addf-eef3a824151a
+      _fieldName: Result
+      _typeName: Single
+      _direction: 0
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: 287
+        y: 7.5
+        width: 16
+        height: 16
+      Connections:
+      - b04a37a0-e1ee-405b-8c79-442b2ba6fb4e
+      - 7f39eaf2-cfb0-4118-89c3-2797c56fd6c6
+      - a2ea7bdf-e391-47b9-b173-34c0562922fa
+    - _portId: 06c76759-ea91-431b-ac63-da8552d61ff8
+      _nodeDataId: bf199a39-a58a-4be6-b355-d049a677b267
+      _fieldName: Output
+      _typeName: Single
+      _direction: 1
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: 119
+        y: 98.5
+        width: 16
+        height: 16
+      Connections:
+      - a2ea7bdf-e391-47b9-b173-34c0562922fa
+    - _portId: 0c82cdf2-4ea7-4fb8-b7a3-b2ef572218cc
+      _nodeDataId: c6c4f1d2-bf96-45f1-9599-3d64d5556f61
+      _fieldName: Output
+      _typeName: Single
+      _direction: 1
+      _overrideConnectionTypeName: 
+      _nodeGraph: {fileID: 11400000}
+      Rect:
+        serializedVersion: 2
+        x: 121.5
+        y: 179.5
+        width: 16
+        height: 16
+      Connections: []
+  Connections:
+    _keys:
+    - 7e2e2bb3-6abc-46b2-81bd-9b3c83c8966b
+    - 9ae26e7b-d8bb-4cd9-8b3c-e464be89858d
+    - b04a37a0-e1ee-405b-8c79-442b2ba6fb4e
+    - 7f39eaf2-cfb0-4118-89c3-2797c56fd6c6
+    - a2ea7bdf-e391-47b9-b173-34c0562922fa
+    _values:
+    - _connectionId: 7e2e2bb3-6abc-46b2-81bd-9b3c83c8966b
+      _fieldName: Output
+      Connection: {fileID: 114660949472596864}
+      Hovering: 0
+    - _connectionId: 9ae26e7b-d8bb-4cd9-8b3c-e464be89858d
+      _fieldName: Output
+      Connection: {fileID: 114587678786589636}
+      Hovering: 0
+    - _connectionId: b04a37a0-e1ee-405b-8c79-442b2ba6fb4e
+      _fieldName: Data
+      Connection: {fileID: 114208122568863528}
+      Hovering: 0
+    - _connectionId: 7f39eaf2-cfb0-4118-89c3-2797c56fd6c6
+      _fieldName: Data
+      Connection: {fileID: 114271070353536446}
+      Hovering: 0
+    - _connectionId: a2ea7bdf-e391-47b9-b173-34c0562922fa
+      _fieldName: Output
+      Connection: {fileID: 114493235970739504}
+      Hovering: 0
+--- !u!114 &114028891077771340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606f09dad9d34769832ded1db6587a78, type: 3}
+  m_Name: FloatInputNode
+  m_EditorClassIdentifier: 
+  Outputs:
+  - _connectionId: 9ae26e7b-d8bb-4cd9-8b3c-e464be89858d
+    _fieldName: Output
+    Connection: {fileID: 114587678786589636}
+    Hovering: 0
+  Inputs: []
+  _nodeGraph: {fileID: 11400000}
+  Output: 2.46
+--- !u!114 &114109962100346790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df43424c3c84b3cb07052e9d44789f1, type: 3}
+  m_Name: AddNode
+  m_EditorClassIdentifier: 
+  Outputs:
+  - _connectionId: b04a37a0-e1ee-405b-8c79-442b2ba6fb4e
+    _fieldName: Data
+    Connection: {fileID: 114208122568863528}
+    Hovering: 0
+  Inputs:
+  - _connectionId: 7e2e2bb3-6abc-46b2-81bd-9b3c83c8966b
+    _fieldName: Output
+    Connection: {fileID: 114660949472596864}
+    Hovering: 0
+  _nodeGraph: {fileID: 11400000}
+  Factor: 5
+  Data: 1.23
+--- !u!114 &114208122568863528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9692e378cfd4569929848f88094f6e5, type: 3}
+  m_Name: ReflectionConnection
+  m_EditorClassIdentifier: 
+  _nodeGraph: {fileID: 11400000}
+  _connectionName: ReflectionConnection
+  _defaultConnectionColor: {r: 0, g: 1, b: 0, a: 1}
+  _defaultKnobColor: {r: 0, g: 0, b: 0, a: 1}
+  _defaultLineWidth: 2
+  InPortId: e1e5773f-3d0c-4705-8553-b366327dbcd5
+  OutPortId: 6db65801-a9b7-4f41-89c8-b5a876a89399
+  FieldName: Data
+  InNode: {fileID: 114708454154224334}
+  OutNode: {fileID: 114109962100346790}
+--- !u!114 &114271070353536446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9692e378cfd4569929848f88094f6e5, type: 3}
+  m_Name: ReflectionConnection
+  m_EditorClassIdentifier: 
+  _nodeGraph: {fileID: 11400000}
+  _connectionName: ReflectionConnection
+  _defaultConnectionColor: {r: 0, g: 1, b: 0, a: 1}
+  _defaultKnobColor: {r: 0, g: 0, b: 0, a: 1}
+  _defaultLineWidth: 2
+  InPortId: e1e5773f-3d0c-4705-8553-b366327dbcd5
+  OutPortId: 50d106fc-2f31-4a07-a875-bb5876436f5e
+  FieldName: Data
+  InNode: {fileID: 114708454154224334}
+  OutNode: {fileID: 114353728374527272}
+--- !u!114 &114353728374527272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28bd38f39ca144b18c36432bf5f056f, type: 3}
+  m_Name: MultiplyNode
+  m_EditorClassIdentifier: 
+  Outputs:
+  - _connectionId: 7f39eaf2-cfb0-4118-89c3-2797c56fd6c6
+    _fieldName: Data
+    Connection: {fileID: 114271070353536446}
+    Hovering: 0
+  Inputs:
+  - _connectionId: 9ae26e7b-d8bb-4cd9-8b3c-e464be89858d
+    _fieldName: Output
+    Connection: {fileID: 114587678786589636}
+    Hovering: 0
+  _nodeGraph: {fileID: 11400000}
+  Factor: 3
+  Data: 2.46
+--- !u!114 &114371332261590894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606f09dad9d34769832ded1db6587a78, type: 3}
+  m_Name: FloatInputNode
+  m_EditorClassIdentifier: 
+  Outputs:
+  - _connectionId: 7e2e2bb3-6abc-46b2-81bd-9b3c83c8966b
+    _fieldName: Output
+    Connection: {fileID: 114660949472596864}
+    Hovering: 0
+  Inputs: []
+  _nodeGraph: {fileID: 11400000}
+  Output: 1.23
+--- !u!114 &114493235970739504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9692e378cfd4569929848f88094f6e5, type: 3}
+  m_Name: ReflectionConnection
+  m_EditorClassIdentifier: 
+  _nodeGraph: {fileID: 11400000}
+  _connectionName: ReflectionConnection
+  _defaultConnectionColor: {r: 0, g: 1, b: 0, a: 1}
+  _defaultKnobColor: {r: 0, g: 0, b: 0, a: 1}
+  _defaultLineWidth: 2
+  InPortId: e1e5773f-3d0c-4705-8553-b366327dbcd5
+  OutPortId: 06c76759-ea91-431b-ac63-da8552d61ff8
+  FieldName: Output
+  InNode: {fileID: 114708454154224334}
+  OutNode: {fileID: 114834076542934744}
+--- !u!114 &114587678786589636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9692e378cfd4569929848f88094f6e5, type: 3}
+  m_Name: ReflectionConnection
+  m_EditorClassIdentifier: 
+  _nodeGraph: {fileID: 11400000}
+  _connectionName: ReflectionConnection
+  _defaultConnectionColor: {r: 0, g: 1, b: 0, a: 1}
+  _defaultKnobColor: {r: 0, g: 0, b: 0, a: 1}
+  _defaultLineWidth: 2
+  InPortId: 8fa1f5dc-1d23-46bc-93ed-4a05f34d3865
+  OutPortId: f7159537-9a81-4edd-8c00-22c5bed3469b
+  FieldName: Output
+  InNode: {fileID: 114353728374527272}
+  OutNode: {fileID: 114028891077771340}
+--- !u!114 &114660949472596864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9692e378cfd4569929848f88094f6e5, type: 3}
+  m_Name: ReflectionConnection
+  m_EditorClassIdentifier: 
+  _nodeGraph: {fileID: 11400000}
+  _connectionName: ReflectionConnection
+  _defaultConnectionColor: {r: 0, g: 1, b: 0, a: 1}
+  _defaultKnobColor: {r: 0, g: 0, b: 0, a: 1}
+  _defaultLineWidth: 2
+  InPortId: 0b50f0d6-6097-443c-9008-72446cd8720f
+  OutPortId: f48f8aa4-dcc7-4d96-8f5e-3d02f5198c2d
+  FieldName: Output
+  InNode: {fileID: 114109962100346790}
+  OutNode: {fileID: 114371332261590894}
+--- !u!114 &114708454154224334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b0282f029c4468c9f917932f241a44, type: 3}
+  m_Name: SumNode
+  m_EditorClassIdentifier: 
+  Outputs: []
+  Inputs:
+  - _connectionId: b04a37a0-e1ee-405b-8c79-442b2ba6fb4e
+    _fieldName: Data
+    Connection: {fileID: 114208122568863528}
+    Hovering: 0
+  - _connectionId: 7f39eaf2-cfb0-4118-89c3-2797c56fd6c6
+    _fieldName: Data
+    Connection: {fileID: 114271070353536446}
+    Hovering: 0
+  - _connectionId: a2ea7bdf-e391-47b9-b173-34c0562922fa
+    _fieldName: Output
+    Connection: {fileID: 114493235970739504}
+    Hovering: 0
+  _nodeGraph: {fileID: 11400000}
+  Result: 15.690001
+--- !u!114 &114834076542934744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606f09dad9d34769832ded1db6587a78, type: 3}
+  m_Name: FloatInputNode
+  m_EditorClassIdentifier: 
+  Outputs:
+  - _connectionId: a2ea7bdf-e391-47b9-b173-34c0562922fa
+    _fieldName: Output
+    Connection: {fileID: 114493235970739504}
+    Hovering: 0
+  Inputs: []
+  _nodeGraph: {fileID: 11400000}
+  Output: 12
+--- !u!114 &114889022341653870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606f09dad9d34769832ded1db6587a78, type: 3}
+  m_Name: FloatInputNode
+  m_EditorClassIdentifier: 
+  Outputs: []
+  Inputs: []
+  _nodeGraph: {fileID: 11400000}
+  Output: 1.92
