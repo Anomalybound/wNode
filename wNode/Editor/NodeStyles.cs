@@ -11,7 +11,7 @@ namespace wNode.Editors
 
         public GUIStyle NodeBody;
         public GUIStyle NodeTitleLabel;
-        public Color NodeTextColor = Color.white;
+        public Color NodeLabelColor = Color.white;
         public Color NodeBodyColor = Color.black;
 
         [Header("Port")]

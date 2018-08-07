@@ -24,10 +24,7 @@ namespace wNode.Editors
 
         public void DrawNode()
         {
-            if (NodeSerializedObject == null)
-            {
-                NodeSerializedObject = new SerializedObject(NodeData.Node);
-            }
+            if (NodeSerializedObject == null) { NodeSerializedObject = new SerializedObject(NodeData.Node); }
 
             var headerRect = NodeData.HeaderRect;
             var bodyRect = NodeData.BodyRect;
@@ -35,7 +32,7 @@ namespace wNode.Editors
             headerRect.position = BaseNodeWindow.GraphToScreenSpace(headerRect.position);
             bodyRect.position = BaseNodeWindow.GraphToScreenSpace(bodyRect.position);
 
-            var contentCol = GUI.contentColor;
+            var labelCol = EditorStyles.label.normal.textColor;
             GUI.backgroundColor = NodeData.Node.NodeColor;
             GUILayout.BeginArea(headerRect);
             GUILayout.BeginVertical(NodeStyles.Instance.NodeHeader);
@@ -45,14 +42,14 @@ namespace wNode.Editors
             GUILayout.EndVertical();
 
             GUI.backgroundColor = NodeStyles.Instance.NodeBodyColor;
-            GUI.contentColor = NodeStyles.Instance.NodeTextColor;
             GUILayout.BeginArea(bodyRect);
             GUILayout.BeginVertical(NodeStyles.Instance.NodeBody);
             GUI.backgroundColor = Color.white;
+            EditorStyles.label.normal.textColor = NodeStyles.Instance.NodeLabelColor;
             OnNodeBodyGUI();
             GUILayout.EndArea();
             GUILayout.EndVertical();
-            GUI.contentColor = contentCol;
+            EditorStyles.label.normal.textColor = labelCol;
 
             // Draw ports
             DrawPorts();
@@ -76,10 +73,7 @@ namespace wNode.Editors
         protected virtual void OnNodeBodyGUI()
         {
             var nodeWidth = GetNodeWidth();
-            using (new LabelWidthScope(nodeWidth / 2f))
-            {
-                DrawFields(NodeData.Node);
-            }
+            using (new LabelWidthScope(nodeWidth / 2f)) { DrawFields(NodeData.Node); }
         }
 
         private void DrawFields(Node node)
@@ -171,10 +165,7 @@ namespace wNode.Editors
                         {
                             _fieldPositions[nodePort.FieldName] = rect;
                         }
-                        else
-                        {
-                            _fieldPositions.Add(nodePort.FieldName, rect);
-                        }
+                        else { _fieldPositions.Add(nodePort.FieldName, rect); }
 
                         if (nodePort.InspectType != InspectType.Output)
                         {
@@ -200,10 +191,7 @@ namespace wNode.Editors
 
                 if (check.changed)
                 {
-                    if (node.OnNodeUpdated != null)
-                    {
-                        node.OnNodeUpdated(node);
-                    }
+                    if (node.OnNodeUpdated != null) { node.OnNodeUpdated(node); }
 
                     NodeSerializedObject.ApplyModifiedProperties();
 
@@ -212,10 +200,7 @@ namespace wNode.Editors
                         for (var i = 0; i < node.Outputs.Count; i++)
                         {
                             var connection = node.Outputs[i];
-                            if (connection != null)
-                            {
-                                connection.Connection.OnNodeUpdated(node);
-                            }
+                            if (connection != null) { connection.Connection.OnNodeUpdated(node); }
                         }
                     }
                 }
@@ -233,10 +218,7 @@ namespace wNode.Editors
                 var portWrapper = ports[i];
                 var fieldName = portWrapper.FieldName;
 
-                if (!_fieldPositions.ContainsKey(fieldName))
-                {
-                    continue;
-                }
+                if (!_fieldPositions.ContainsKey(fieldName)) { continue; }
 
                 var fieldRect = _fieldPositions[fieldName];
                 var fieldPosition = fieldRect.position;
