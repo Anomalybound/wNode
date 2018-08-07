@@ -16,10 +16,7 @@ namespace wNode.Editors
         {
             get
             {
-                if (_instance == null)
-                {
-                    _instance = GetWindow<BaseNodeWindow>();
-                }
+                if (_instance == null) { _instance = GetWindow<BaseNodeWindow>(); }
 
                 return _instance;
             }
@@ -42,10 +39,7 @@ namespace wNode.Editors
         [MenuItem("wNode/Node Window %#n")]
         private static void OpenWindow()
         {
-            if (_instance == null)
-            {
-                _instance = GetWindow<BaseNodeWindow>();
-            }
+            if (_instance == null) { _instance = GetWindow<BaseNodeWindow>(); }
 
             _instance.minSize = new Vector2(500, 350);
             _instance.titleContent = new GUIContent("wNode Window");
@@ -108,7 +102,7 @@ namespace wNode.Editors
                 // Begin scale
                 var graphRect = GridSize;
                 var center = graphRect.size / 2f;
-                _zoomAdjustment = GUIScaleUtility.BeginScale(ref graphRect, center, ZoomScale, false);
+                _zoomAdjustment = GUIScaleUtility.BeginScale(ref graphRect, center, ZoomScale, true, false);
 
                 DrawNodes();
                 DrawConnections();
@@ -124,10 +118,7 @@ namespace wNode.Editors
 
             if (LoadedGraph != null)
             {
-                if (_debugToggle)
-                {
-                    DrawDebugPanel();
-                }
+                if (_debugToggle) { DrawDebugPanel(); }
 
                 ControlActions();
             }
@@ -189,10 +180,7 @@ namespace wNode.Editors
         private static void CheckNodeCacheRebuild()
         {
             var windowInstances = Resources.FindObjectsOfTypeAll<BaseNodeWindow>();
-            if (windowInstances != null && windowInstances.Length > 0)
-            {
-                NodeCache.BuildCahces(windowInstances[0]);
-            }
+            if (windowInstances != null && windowInstances.Length > 0) { NodeCache.BuildCahces(windowInstances[0]); }
         }
 
         [OnOpenAsset]
