@@ -36,7 +36,7 @@ namespace wNode.Editors
             }
         }
 
-        [MenuItem("wNode/Node Window %#n")]
+        [MenuItem("wNode/Node Window %#u")]
         private static void OpenWindow()
         {
             if (_instance == null) { _instance = GetWindow<BaseNodeWindow>(); }
