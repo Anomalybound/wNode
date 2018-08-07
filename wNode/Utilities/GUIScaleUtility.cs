@@ -80,14 +80,16 @@ namespace NodeEditorFramework.Utilities
                 initiated = true;
                 return;
             }
+            
+            MethodInfo topmostRectGetter = topmostRect.GetGetMethod();
+            if (topmostRectGetter == null)
+            {
+                topmostRectGetter = topmostRect.GetGetMethod(true);
+            }
 
             // Create simple acessor delegates
             GetTopRectDelegate = (Func<Rect>) Delegate.CreateDelegate(typeof(Func<Rect>), GetTopRect);
-            topmostRectDelegate = (Func<Rect>) Delegate.CreateDelegate(typeof(Func<Rect>), topmostRect.GetGetMethod(
-#if UNITY_2018_2_OR_NEWER
-                true
-#endif
-            ));
+            topmostRectDelegate = (Func<Rect>) Delegate.CreateDelegate(typeof(Func<Rect>), topmostRectGetter);
 
             if (GetTopRectDelegate == null || topmostRectDelegate == null)
             {
